@@ -15,7 +15,7 @@ while True:
     BTN_X, BTN_Y = (0, 0)
     if isinstance(location, tuple):
         BTN_X, BTN_Y = location
-        print(f"{datetime.datetime.utcnow().isoformat()}Z,{BTN_X:7.2f},{BTN_Y:7.2f}")
+        print(f"{datetime.datetime.utcnow().isoformat()}Z,{BTN_X:4.0f},{BTN_Y:4.0f}")
         time.sleep(randrange(MIN_MS,MAX_MS)/1000.0)
         pyautogui.moveTo(
             randrange((BTN_X-(36/2)),(BTN_X+(36/2))),
