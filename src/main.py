@@ -1,3 +1,4 @@
+"""Module providing function to select a random number from a range."""
 from random import randrange
 import time
 import pyautogui
